@@ -1,5 +1,5 @@
 FROM alpine:3.4
-RUN apk update && apk add git make build-base openssl curl file autoconf automake libtool
+RUN apk update && apk add git make build-base openssl curl file autoconf automake libtool linux-headers
 RUN git clone http://luajit.org/git/luajit-2.0.git && \
   cd luajit-2.0 && \
   git checkout v2.1 && \
